@@ -13,7 +13,7 @@ router.post('/create', (req, res, next) => {
     movies.create({
         title: req.body.title,
         genre: req.body.genre,
-        plot:   req.body.plot,
+        plot:  req.body.plot,
         cast: req.body.cast,
     })
     .then((createmovies) => {
